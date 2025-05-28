@@ -368,6 +368,9 @@
             position: relative;
             overflow: hidden;
         }
+        .project-image {
+            background-size: contain;
+        }
 
         .project-image::before {
             content: '';
@@ -386,8 +389,11 @@
 
         .project-content {
             padding: 2rem;
+            text-decoration: none;
         }
-
+        .project-content>a{
+            text-decoration: none;
+        }
         .project h3 {
             font-size: 1.5rem;
             font-weight: 600;
