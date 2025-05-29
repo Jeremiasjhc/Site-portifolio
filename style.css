@@ -519,8 +519,9 @@ img:hover{
 }
 
 .social-icons a:hover {
-  background-color: #a85f69;
-  color: #fff;
+  background-color: var(--text-light);
+  transition: 0.3s;
+  color: var(--white);
 }
 /* ANIMAÇÕES */
 @keyframes slideInLeft {
