@@ -523,6 +523,10 @@ img:hover{
   transition: 0.3s;
   color: var(--white);
 }
+
+footer>h3{
+    padding-top: 20px;
+}
 /* ANIMAÇÕES */
 @keyframes slideInLeft {
     from {
