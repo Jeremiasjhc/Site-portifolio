@@ -366,7 +366,7 @@ body {
 
 .project-image {
     height: 200px;
-    background: var(--gradient);
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -375,7 +375,7 @@ body {
     overflow: hidden;
 }
 .project-image {
-    background-size: contain;
+    background-size: cover;
 }
 
 .project-image::before {
