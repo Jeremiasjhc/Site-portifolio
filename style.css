@@ -373,9 +373,13 @@ body {
     font-size: 4rem;
     position: relative;
     overflow: hidden;
+
 }
-.project-image {
-    background-size: cover;
+
+.project-image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .project-image::before {
