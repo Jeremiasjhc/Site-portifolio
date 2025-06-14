@@ -1,0 +1,386 @@
+/* ========================================
+   ESTILOS PARA IMPRESSÃO - PORTFÓLIO JEREMIAS JHC
+   ======================================== */
+
+@media print {
+    /* Reset básico para impressão */
+    * {
+        -webkit-print-color-adjust: exact !important;
+        color-adjust: exact !important;
+        background: white !important;
+        color: black !important;
+    }
+
+    /* Configurações de página */
+    @page {
+        margin: 2cm;
+        size: A4;
+    }
+
+    /* ELEMENTOS A ESCONDER */
+    /* Header/Navegação */
+    .header,
+    .nav,
+    .mobile-menu,
+    .nav-links,
+    .logo {
+        display: none !important;
+    }
+
+    /* Botões e elementos interativos */
+    .cta-button,
+    .submit-btn,
+    button,
+    input[type="submit"] {
+        display: none !important;
+    }
+
+    /* Footer com redes sociais */
+    .footer,
+    .social-icons {
+        display: none !important;
+    }
+
+    /* Formulário de contato */
+    .contact-form,
+    form {
+        display: none !important;
+    }
+
+    /* Animações e efeitos */
+    .scroll-animate,
+    .hero::before {
+        display: none !important;
+    }
+
+    /* CONTEÚDO PRINCIPAL */
+    body {
+        font-family: Georgia, "Times New Roman", serif !important;
+        font-size: 12pt !important;
+        line-height: 1.4 !important;
+        color: black !important;
+        background: white !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    /* Container principal */
+    main {
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    /* SEÇÃO HERO - Cabeçalho do currículo */
+    .hero {
+        min-height: auto !important;
+        padding: 20pt 0 !important;
+        background: white !important;
+        border-bottom: 2pt solid black !important;
+        page-break-after: avoid !important;
+    }
+
+    .hero-content {
+        display: block !important;
+        text-align: center !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .hero-text {
+        animation: none !important;
+        margin-bottom: 20pt !important;
+    }
+
+    .hero-text h1 {
+        font-size: 24pt !important;
+        font-weight: bold !important;
+        margin-bottom: 10pt !important;
+        text-align: center !important;
+        color: black !important;
+        background: none !important;
+        -webkit-background-clip: initial !important;
+        -webkit-text-fill-color: initial !important;
+    }
+
+    .hero-text .name,
+    .hero-text .title {
+        display: block !important;
+        color: black !important;
+        background: none !important;
+        -webkit-background-clip: initial !important;
+        -webkit-text-fill-color: initial !important;
+    }
+
+    .hero-text p {
+        font-size: 11pt !important;
+        color: black !important;
+        margin-bottom: 15pt !important;
+        text-align: center !important;
+        max-width: 100% !important;
+    }
+
+    /* Esconder imagem do perfil */
+    .hero-image,
+    .profile-image {
+        display: none !important;
+    }
+
+    /* SEÇÃO SOBRE */
+    .about {
+        padding: 20pt 0 !important;
+        background: white !important;
+        page-break-inside: avoid !important;
+    }
+
+    .about-content {
+        display: block !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .about-text h2 {
+        font-size: 18pt !important;
+        font-weight: bold !important;
+        margin-bottom: 15pt !important;
+        color: black !important;
+        border-bottom: 1pt solid black !important;
+        padding-bottom: 5pt !important;
+    }
+
+    .about-text p {
+        font-size: 11pt !important;
+        color: black !important;
+        margin-bottom: 12pt !important;
+        line-height: 1.4 !important;
+        text-align: justify !important;
+    }
+
+    /* Habilidades */
+    .skills {
+        display: block !important;
+        margin-top: 15pt !important;
+    }
+
+    .skills::before {
+        content: "HABILIDADES TÉCNICAS:" !important;
+        display: block !important;
+        font-weight: bold !important;
+        font-size: 12pt !important;
+        margin-bottom: 8pt !important;
+        color: black !important;
+    }
+
+    .skill {
+        display: inline-block !important;
+        background: none !important;
+        border: 1pt solid black !important;
+        padding: 4pt 8pt !important;
+        margin: 2pt 4pt 2pt 0 !important;
+        border-radius: 0 !important;
+        font-size: 10pt !important;
+        color: black !important;
+    }
+
+    .skill-icon {
+        display: none !important;
+    }
+
+    /* SEÇÃO PORTFÓLIO */
+    .portfolio {
+        padding: 20pt 0 !important;
+        background: white !important;
+        page-break-before: auto !important;
+    }
+
+    .portfolio-content {
+        max-width: 100% !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .portfolio h2,
+    .twopag {
+        font-size: 18pt !important;
+        font-weight: bold !important;
+        color: black !important;
+        margin-bottom: 15pt !important;
+        border-bottom: 1pt solid black !important;
+        padding-bottom: 5pt !important;
+        text-align: left !important;
+    }
+
+    .portfolio p.twopag {
+        font-size: 11pt !important;
+        border: none !important;
+        margin-bottom: 15pt !important;
+        text-align: left !important;
+    }
+
+    /* Projetos */
+    .projects,
+    .grade-projetos {
+        display: block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+
+    .project,
+    .card-projeto {
+        display: block !important;
+        background: white !important;
+        border: 1pt solid black !important;
+        border-radius: 0 !important;
+        margin-bottom: 15pt !important;
+        padding: 10pt !important;
+        box-shadow: none !important;
+        page-break-inside: avoid !important;
+    }
+
+    /* Esconder imagens dos projetos */
+    .project-image,
+    .card-projeto img {
+        display: none !important;
+    }
+
+    .project h3,
+    .card-projeto h2 {
+        font-size: 14pt !important;
+        font-weight: bold !important;
+        color: black !important;
+        margin-bottom: 8pt !important;
+    }
+
+    .project p,
+    .card-projeto p {
+        font-size: 10pt !important;
+        color: black !important;
+        line-height: 1.3 !important;
+        margin-bottom: 8pt !important;
+    }
+
+    /* Links dos projetos */
+    .project-content a,
+    .card-projeto a {
+        display: block !important;
+        font-size: 9pt !important;
+        color: black !important;
+        text-decoration: none !important;
+        font-weight: bold !important;
+        margin-top: 5pt !important;
+    }
+
+    .project-content a::before,
+    .card-projeto a::before {
+        content: "Link: " !important;
+    }
+
+    /* SEÇÃO CONTATO */
+    .contact {
+        padding: 20pt 0 !important;
+        background: white !important;
+        page-break-inside: avoid !important;
+    }
+
+    .contact-content {
+        display: block !important;
+        max-width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .contact h2 {
+        font-size: 18pt !important;
+        font-weight: bold !important;
+        color: black !important;
+        margin-bottom: 15pt !important;
+        border-bottom: 1pt solid black !important;
+        padding-bottom: 5pt !important;
+    }
+
+    .contact-info p {
+        font-size: 11pt !important;
+        color: black !important;
+        margin-bottom: 12pt !important;
+        line-height: 1.4 !important;
+    }
+
+    /* Adicionar informações de contato */
+    .contact-info::after {
+        content: "\A Email: jeremiasjhc@exemplo.com \A Telefone: (+244) 000-000-000 \A GitHub: github.com/Jeremiasjhc \A LinkedIn: linkedin.com/in/jeremias-jhc-349166334" !important;
+        white-space: pre !important;
+        font-size: 11pt !important;
+        font-weight: bold !important;
+        color: black !important;
+        border: 1pt solid black !important;
+        padding: 10pt !important;
+        margin-top: 15pt !important;
+        display: block !important;
+    }
+
+    /* QUEBRAS DE PÁGINA */
+    .hero {
+        page-break-after: avoid !important;
+    }
+
+    .about {
+        page-break-before: avoid !important;
+        page-break-after: avoid !important;
+    }
+
+    .portfolio {
+        page-break-before: auto !important;
+    }
+
+    .contact {
+        page-break-before: auto !important;
+    }
+
+    /* Evitar quebras dentro de elementos */
+    .project,
+    .card-projeto,
+    .skill,
+    .about-text,
+    .contact-info {
+        page-break-inside: avoid !important;
+    }
+
+    /* Remover transformações e animações */
+    * {
+        transform: none !important;
+        animation: none !important;
+        transition: none !important;
+    }
+
+    /* Garantir que links sejam visíveis */
+    a {
+        color: black !important;
+        text-decoration: underline !important;
+    }
+
+    /* Cabeçalho da impressão */
+    body::before {
+        content: "CURRÍCULO - JEREMIAS CALANDULA - DESENVOLVEDOR WEB" !important;
+        display: block !important;
+        text-align: center !important;
+        font-size: 16pt !important;
+        font-weight: bold !important;
+        color: black !important;
+        margin-bottom: 20pt !important;
+        padding-bottom: 10pt !important;
+        border-bottom: 2pt solid black !important;
+    }
+
+    /* Rodapé da impressão */
+    body::after {
+        content: "\A \A Documento gerado em " counter(page) " página(s) - " attr(data-date) !important;
+        white-space: pre !important;
+        display: block !important;
+        text-align: center !important;
+        font-size: 9pt !important;
+        color: black !important;
+        margin-top: 20pt !important;
+        padding-top: 10pt !important;
+        border-top: 1pt solid black !important;
+    }
+}
